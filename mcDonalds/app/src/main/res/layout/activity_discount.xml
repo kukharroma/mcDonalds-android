@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/l_base_top"
+        layout="@layout/layout_base_top" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        style="@style/rlCenterStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/l_base_top"
+        android:orientation="vertical">
+
+        <com.mlsdev.mcdonalds.ui.activity.widget.McDTextView
+            android:id="@+id/textView5"
+            style="@style/tvShowCashierStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <com.mlsdev.mcdonalds.ui.activity.widget.McDTextView
+            android:id="@+id/textView6"
+            style="@style/tvQrCodeNumberStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/rlTimerBackgroundStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout4">
+
+
+        <com.mlsdev.mcdonalds.ui.activity.widget.ProgressTimer
+            android:id="@+id/progressTimer"
+            style="@style/timer_image_view_style"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <com.mlsdev.mcdonalds.ui.activity.widget.McDTextView
+            android:id="@+id/tv_timer"
+            style="@style/tvTimerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="0:30"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include layout="@layout/layout_sale_bottom" />
+    </RelativeLayout>
+</RelativeLayout>

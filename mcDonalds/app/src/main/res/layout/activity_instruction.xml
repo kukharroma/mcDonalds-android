@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/layout_base_top" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@style/rlCenterStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_left"
+            style="@style/ibSidesStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/arrow_left" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_big_mac"
+                style="@style/ivDishStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                style="@style/rlYellowLittleSale"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/iv_big_mac"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/iv_big_mac">
+
+                <com.mlsdev.mcdonalds.ui.activity.widget.McDTextView
+                    style="@style/tvSaleBottomStyle.LittleSale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <ImageButton
+            android:id="@+id/ib_right"
+            style="@style/ibSidesStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/arrow_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        style="@style/llInstructionItemStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:orientation="horizontal">
+
+        <com.mlsdev.mcdonalds.ui.activity.widget.McDTextView
+            style="@style/tvInstructionShapeStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <com.mlsdev.mcdonalds.ui.activity.widget.McDTextView
+            style="@style/tvInstructionStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scan_qr_code_and_get_voucher"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        style="@style/llInstructionItemStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:orientation="horizontal">
+
+        <com.mlsdev.mcdonalds.ui.activity.widget.McDTextView
+            style="@style/tvInstructionShapeStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/second"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <com.mlsdev.mcdonalds.ui.activity.widget.McDTextView
+            style="@style/tvInstructionStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activate_the_voucher"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/llInstructionItemStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout3"
+        android:orientation="horizontal">
+
+        <com.mlsdev.mcdonalds.ui.activity.widget.McDTextView
+            style="@style/tvInstructionShapeStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/third"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <com.mlsdev.mcdonalds.ui.activity.widget.McDTextView
+            style="@style/tvInstructionStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_discount_or_a_free_item"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <include layout="@layout/layout_scan_bottom" />
+    </FrameLayout>
+</RelativeLayout>

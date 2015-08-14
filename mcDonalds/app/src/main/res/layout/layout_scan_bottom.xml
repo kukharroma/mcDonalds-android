@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/rlYellowBottomStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        style="@style/llYellowTopFenceStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        style="@style/rlYellowBackgroundStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout">
+
+        <RelativeLayout
+            android:id="@+id/rl_scan_qr_code"
+            style="@style/rlScanQrBackgroundStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                style="@style/ivQrCodeStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.mlsdev.mcdonalds.ui.activity.widget.McDTextView
+                android:id="@+id/textView"
+                style="@style/tvScanStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView2"
+                android:layout_alignEnd="@+id/textView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_toRightOf="@+id/imageView"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <com.mlsdev.mcdonalds.ui.activity.widget.McDTextView
+                android:id="@+id/textView2"
+                style="@style/tvQrCodeStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                style="@style/ibScanStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignTop="@+id/textView"
+                android:layout_toEndOf="@+id/textView"
+                android:layout_toRightOf="@+id/textView" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

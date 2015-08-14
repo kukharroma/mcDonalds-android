@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- tittle -->
+    <dimen name="tv_tittle_left_padding">5dp</dimen>
+    <dimen name="tv_tittle_font_size">25sp</dimen>
+
+    <!-- icon -->
+    <dimen name="menu_icon_width">25dp</dimen>
+    <dimen name="menu_icon_height">25dp</dimen>
+
+    <!-- logo -->
+    <dimen name="logo_icon_width">30dp</dimen>
+    <dimen name="logo_icon_height">30dp</dimen>
+
+    <!-- layouts -->
+    <dimen name="rl_center_padding_top">25dp</dimen>
+
+    <dimen name="ll_instruction_item_padding_bottom">5dp</dimen>
+    <dimen name="ll_instruction_item_padding_left">10dp</dimen>
+    <dimen name="ll_instruction_item_padding_right">5dp</dimen>
+    <dimen name="ll_instruction_item_padding_top">5dp</dimen>
+
+    <dimen name="rl_yellow_bottom_padding_top">15dp</dimen>
+
+    <dimen name="rl_yellow_background_padding">20dp</dimen>
+
+    <dimen name="bottom_layout_padding_top">30dp</dimen>
+    <dimen name="bottom_layout_padding_bottom">30dp</dimen>
+
+    <dimen name="rl_scan_qr_background_radius">7dp</dimen>
+    <dimen name="rl_scan_qr_background_padding">10dp</dimen>
+
+    <dimen name="rl_new_qr_code_margin_top">45dp</dimen>
+    <dimen name="rl_new_qr_code_padding">15dp</dimen>
+
+    <dimen name="rl_discount_expired_padding_top">40dp</dimen>
+    <dimen name="rl_discount_expired_padding_bottom">40dp</dimen>
+    <dimen name="rl_discount_expired_padding_left">50dp</dimen>
+    <dimen name="rl_discount_expired_padding_right">50dp</dimen>
+
+    <dimen name="rl_timer_background_padding">15dp</dimen>
+
+    <dimen name="rl_sale_padding">5dp</dimen>
+    <dimen name="rl_sale_width">60dp</dimen>
+
+    <!-- textView -->
+    <dimen name="bg_shape_corners">10dp</dimen>
+    
+    <dimen name="tv_instruction_shape_width">40dp</dimen>
+    <dimen name="tv_instruction_shape_height">40dp</dimen>
+    <dimen name="tv_instruction_text_size">18sp</dimen>
+    <dimen name="tv_instruction_padding_left">14dp</dimen>
+    
+    <dimen name="tv_scan_text_size">32sp</dimen>
+    <dimen name="tv_scan_margin_left">10dp</dimen>
+
+    <dimen name="tv_qr_code_text_size">22sp</dimen>
+    <dimen name="tv_qr_code_margin_left">10dp</dimen>
+
+    <dimen name="tv_voucher_padding_top">10dp</dimen>
+    <dimen name="tv_voucher_expired_text_size">25sp</dimen>
+
+    <dimen name="tv_new_qr_code_text_size">25sp</dimen>
+    <dimen name="tv_sale_text_size">60sp</dimen>
+    <dimen name="tv_your_discount_text_size">15sp</dimen>
+
+    <dimen name="tv_show_cashier_text_size">20sp</dimen>
+    <dimen name="tv_qr_code_number_text_size">55sp</dimen>
+
+    <dimen name="tv_timer_text_size">60sp</dimen>
+
+    <dimen name="tv_little_sale_text_view">25sp</dimen>
+
+    <!-- image buttons -->
+    <dimen name="ib_scan_padding_left">15dp</dimen>
+
+    <!-- image views -->
+    <dimen name="iv_qr_code_width">65dp</dimen>
+    <dimen name="iv_qr_code_height">65dp</dimen>
+    <dimen name="iv_qr_code_padding">15dp</dimen>
+
+    <integer name="iv_dish_layout_weight">4</integer>
+
+    <dimen name="progress_timer_stroke_width">5dp</dimen>
+
+</resources>

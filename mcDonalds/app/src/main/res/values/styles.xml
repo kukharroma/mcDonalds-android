@@ -1,0 +1,218 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="android:itemTextAppearance">@style/menuItemStyle</item>
+    </style>
+
+    <!-- toolbar -->
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+    </style>
+
+    <style name="menuItemStyle" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <!-- tittle -->
+
+
+    <!-- layout-->
+
+    <style name="rlCenterStyle">
+        <item name="android:paddingTop">@dimen/rl_center_padding_top</item>
+    </style>
+
+    <style name="llInstructionItemStyle">
+        <item name="android:paddingTop">@dimen/ll_instruction_item_padding_top</item>
+        <item name="android:paddingRight">@dimen/ll_instruction_item_padding_right</item>
+        <item name="android:paddingBottom">@dimen/ll_instruction_item_padding_bottom</item>
+        <item name="android:paddingLeft">@dimen/ll_instruction_item_padding_left</item>
+    </style>
+
+    <style name="rlYellowBottomStyle">
+        <item name="android:paddingTop">@dimen/rl_yellow_bottom_padding_top</item>
+    </style>
+
+    <style name="llYellowTopFenceStyle">
+        <item name="android:background">@drawable/yellow_fence_top</item>
+    </style>
+
+    <style name="llYellowBottomFenceStyle">
+        <item name="android:background">@drawable/yellow_fence_bottom</item>
+    </style>
+
+    <style name="rlYellowBackgroundStyle">
+        <item name="android:background">@color/yellow</item>
+        <item name="android:padding">@dimen/rl_yellow_background_padding</item>
+    </style>
+
+    <style name="rlScanQrBackgroundStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_rl_scan_qr</item>
+        <item name="android:padding">@dimen/rl_scan_qr_background_padding</item>
+    </style>
+
+    <style name="rlNewQrCodeStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_rl_new_qr_code</item>
+        <item name="android:padding">@dimen/rl_new_qr_code_padding</item>
+        <item name="android:layout_marginTop">@dimen/rl_new_qr_code_margin_top</item>
+    </style>
+
+    <style name="rlDiscountExpiredStyle">
+        <item name="android:paddingLeft">@dimen/rl_discount_expired_padding_left</item>
+        <item name="android:paddingRight">@dimen/rl_discount_expired_padding_right</item>
+        <item name="android:paddingTop">@dimen/rl_discount_expired_padding_top</item>
+        <item name="android:paddingBottom">@dimen/rl_discount_expired_padding_bottom</item>
+    </style>
+
+    <style name="rlTimerBackgroundStyle">
+        <item name="android:padding">@dimen/rl_timer_background_padding</item>
+    </style>
+
+    <style name="rlYellowLittleSale">
+        <item name="android:padding">@dimen/rl_sale_padding</item>
+        <item name="android:background">@drawable/bg_little_sale</item>
+    </style>
+
+    <!-- imageButtons -->
+
+    <style name="ibSidesStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_weight">3</item>
+    </style>
+
+    <style name="ibScanStyle">
+        <item name="android:src">@mipmap/arrow</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/ib_scan_padding_left</item>
+    </style>
+
+    <!-- imageView -->
+
+    <style name="ivDishStyle">
+        <item name="android:src">@mipmap/big_mac_copy3</item>
+        <item name="android:layout_weight">@integer/iv_dish_layout_weight</item>
+    </style>
+
+    <style name="ivQrCodeStyle">
+        <item name="android:width">@dimen/iv_qr_code_width</item>
+        <item name="android:height">@dimen/iv_qr_code_height</item>
+        <item name="android:src">@mipmap/qr_code</item>
+    </style>
+
+    <style name="ivSmileVoucherExpiredStyle">
+        <item name="android:src">@mipmap/smile</item>
+    </style>
+
+    <!-- textView -->
+    <style name="tvTittleStyle">
+        <item name="android:textSize">@dimen/tv_tittle_font_size</item>
+        <item name="android:paddingLeft">@dimen/tv_tittle_left_padding</item>
+        <item name="android:text">@string/mc_donalds</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="font_name">@string/mc_donalds_font_name</item>
+    </style>
+
+    <style name="tvInstructionShapeStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:width">@dimen/tv_instruction_shape_width</item>
+        <item name="android:height">@dimen/tv_instruction_shape_height</item>
+        <item name="android:background">@drawable/bg_instruction_red</item>
+    </style>
+
+    <style name="tvInstructionStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">@dimen/tv_instruction_padding_left</item>
+        <item name="android:textSize">@dimen/tv_instruction_text_size</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="tvScanStyle">
+        <item name="android:text">@string/scan</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:layout_marginLeft">@dimen/tv_scan_margin_left</item>
+        <item name="android:textSize">@dimen/tv_scan_text_size</item>
+    </style>
+
+    <style name="tvQrCodeStyle">
+        <item name="android:text">@string/qr_code</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginLeft">@dimen/tv_qr_code_margin_left</item>
+        <item name="android:textSize">@dimen/tv_qr_code_text_size</item>
+    </style>
+
+    <style name="tvVoucherExpiredStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/tv_voucher_expired_text_size</item>
+        <item name="android:text">@string/voucher_expired</item>
+        <item name="android:paddingTop">@dimen/tv_voucher_padding_top</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="tvNewQrCodeStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/tv_new_qr_code_text_size</item>
+        <item name="android:text">@string/new_qr_code</item>
+    </style>
+
+    <style name="tvSaleBottomStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:text">@string/sale</item>
+        <item name="android:textSize">@dimen/tv_sale_text_size</item>
+    </style>
+
+    <style name="tvYourDiscountBottomStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:text">@string/your_discount</item>
+        <item name="android:textSize">@dimen/tv_your_discount_text_size</item>
+    </style>
+
+    <style name="tvShowCashierStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textSize">@dimen/tv_show_cashier_text_size</item>
+        <item name="android:text">@string/show_cashier</item>
+    </style>
+
+    <style name="tvQrCodeNumberStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/red_btn</item>
+        <item name="android:textSize">@dimen/tv_qr_code_number_text_size</item>
+        <item name="android:text">@string/qr_code_number</item>
+    </style>
+
+    <style name="tvTimerStyle">
+        <item name="android:textSize">@dimen/tv_timer_text_size</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="tvSaleBottomStyle.LittleSale">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:text">@string/sale_little</item>
+        <item name="android:textSize">@dimen/tv_little_sale_text_view</item>
+    </style>
+
+    <!-- timer -->
+
+    <style name="timer_image_view_style">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="riv_oval">true</item>
+    </style>
+
+
+</resources>

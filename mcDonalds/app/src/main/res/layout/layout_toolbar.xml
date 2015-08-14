@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/iv_menu_icon"
+            android:layout_width="@dimen/menu_icon_width"
+            android:layout_height="@dimen/menu_icon_height"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/menu_icon" />
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/logo_icon_width"
+            android:layout_height="@dimen/logo_icon_height"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/tv_tittle"
+            android:layout_toStartOf="@+id/tv_tittle"
+            android:src="@mipmap/mcdonalds_logo" />
+
+        <com.mlsdev.mcdonalds.ui.activity.widget.McDTextView
+            style="@style/tvTittleStyle"
+            android:id="@+id/tv_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
