@@ -18,9 +18,13 @@
         <activity android:name=".ui.activity.QrScannerActivity" android:noHistory="true" android:screenOrientation="portrait"/>
         <activity android:name=".ui.activity.DiscountActivity" android:noHistory="true" android:screenOrientation="portrait"/>
         <activity android:name=".ui.activity.DiscountExpiredActivity" android:noHistory="true" android:screenOrientation="portrait"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="621b835fc8a5cf3079ceaed86148ab6c19cb5ee8" />
     </application>
 
     <uses-permission android:name="android.permission.CAMERA" />
 
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

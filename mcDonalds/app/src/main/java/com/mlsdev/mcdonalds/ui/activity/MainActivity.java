@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.crashlytics.android.Crashlytics;
 import com.mlsdev.mcdonalds.presenter.MainPresenter;
 import com.mlsdev.mcdonalds.presenter.impl.MainPresenterImpl;
+import io.fabric.sdk.android.Fabric;
 
 /**
  * Created by roma on 02.06.15.
@@ -17,6 +19,7 @@ public class MainActivity extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         presenter = new MainPresenterImpl(this);
         presenter.isTimerPresent();
     }
