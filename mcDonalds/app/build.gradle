@@ -20,7 +20,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "cooksdev.com.mcdonalds"
+        applicationId "cooksdev.com.mcdakqrcode"
         minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
